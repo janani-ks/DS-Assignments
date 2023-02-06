@@ -20,6 +20,7 @@ class Student{
 	int getAge() {
 		return age;
 	}
+	@SuppressWarnings("removal")
 	String getGpa() {
 		return new Float(gpa).toString();
 	}
@@ -48,13 +49,13 @@ public class StudentTest {
 				return o2.getGpa().compareTo(o1.getGpa());
 			}
 		});
-		int i=0;
+		int i=1;
 		for (Student l:list) {
-			l1.info("Student "+(++i)+" Details");
+			l1.info("Student "+(++i)+"Details");
 			l1.log(Level.INFO,()-> "Name : "+ l.getName());
-			l1.log(Level.INFO,()-> "Age : "+ l.getAge());
 			l1.log(Level.INFO,()->"GPA : "+ l.getGpa());
 			l1.info("-----------------------");
 		}
 	}
 }
+
