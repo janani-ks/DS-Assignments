@@ -13,7 +13,7 @@ public class Hashmap {
 		   map.put(2,null);
 		   l1.log(Level.INFO,()->"Keys : " + map.keySet());
 		   l1.log(Level.INFO,()->"Values : " + map.values());
-		   l1.log(Level.INFO,()-> "Key/Value mappings: " + map.entrySet());
+		   l1.log(Level.INFO,()-> "Key-Value mapping: " + map.entrySet());
 		   l1.info("Map accepts the null value and if we give the dublicate key then it will updated to the corresponding key value."); 
 		   map.remove(2);
 		   l1.info("After removing 2nd key and value Updated Hashmap!!!");
