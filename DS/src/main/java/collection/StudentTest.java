@@ -48,9 +48,8 @@ public class StudentTest {
 				return o2.getGpa().compareTo(o1.getGpa());
 			}
 		});
-		int i=1;
+		l1.info("Ranking Order");
 		for (Student l:list) {
-			l1.info("Student "+(i++)+" Details");
 			l1.log(Level.INFO,()-> "Name : "+ l.getName());
 			l1.log(Level.INFO,()->"GPA : "+ l.getGpa());
 			l1.info("-----------------------");
