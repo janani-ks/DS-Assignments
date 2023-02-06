@@ -10,7 +10,6 @@ public class Hashmap {
 		   map.put(1,"Nivedha");    
 		   map.put(2,"Jaggu");   
 		   map.put(4,"Shubha"); 
-		   map.put(2,null);
 		   l1.log(Level.INFO,()->"Keys : " + map.keySet());
 		   l1.log(Level.INFO,()->"Values : " + map.values());
 		   l1.log(Level.INFO,()-> "Key-Value mapping: " + map.entrySet());
