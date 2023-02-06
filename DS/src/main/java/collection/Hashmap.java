@@ -3,7 +3,7 @@ import java.util.HashMap;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 public class Hashmap {
-	 public static void main(String args[]){  
+	 public static void main(String[] args){  
 		   HashMap<Integer,String> map=new HashMap<Integer,String>(); 
 		   Logger l1 = Logger.getLogger("com.api.jar");
 		   map.put(3,"Janani");  
