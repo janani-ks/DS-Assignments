@@ -1,6 +1,5 @@
 package collection;
 import java.util.HashMap;
-import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 public class Hashmap {
@@ -18,12 +17,12 @@ public class Hashmap {
 		   l1.info("Map accepts the null value and if we give the dublicate key then it will updated to the corresponding key value."); 
 		   map.remove(2);
 		   l1.info("After removing 2nd key and value Updated Hashmap!!!");
-		   l1.log(Level.INFO,()-> "Key/Value mappings: " + map.entrySet());
+		   l1.log(Level.INFO,()-> "Key-Value mappings: " + map.entrySet());
 		   l1.log(Level.INFO,()->"Size of Hashmap = " +map.size());
 		   l1.log(Level.INFO,()-> map.get(5));
 		   map.put(2, null);
 		   map.replace(2,"Jaggu");
 		   l1.info("After updating 2 key value Updated Hashmap!!!");
-		   l1.log(Level.INFO,()-> "Key/Value mappings: " + map.entrySet());
+		   l1.log(Level.INFO,()-> "Key-Value mappings: " + map.entrySet());
 		   }  
 		}  
