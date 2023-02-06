@@ -1,5 +1,7 @@
 package collection;
 import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
@@ -19,13 +21,13 @@ class Student{
 		return age;
 	}
 	String getGpa() {
-		String str = new Float(gpa).toString();
-		return str;
+		return new Float(gpa).toString();
 	}
 }
 public class StudentTest {
 	public static void main(String[] arg) {
-		List<Student> list=new ArrayList<Student>();  
+		List<Student> list=new ArrayList<Student>(); 
+		Logger l1 = Logger.getLogger("com.api.jar");
 		Student s = new Student();
 		Student s1 = new Student();
 		Student s2 = new Student();
@@ -48,12 +50,11 @@ public class StudentTest {
 		});
 		int i=0;
 		for (Student l:list) {
-			System.out.println("Student "+(i+1)+" Details");
-			System.out.println("Name : "+ l.getName());
-			System.out.println("Age : "+ l.getAge());
-			System.out.println("GPA : "+ l.getGpa());
-			System.out.println("-----------------------");
-			i++;
+			l1.info("Student "+(++i)+" Details");
+			l1.log(Level.INFO,()-> "Name : "+ l.getName());
+			l1.log(Level.INFO,()-> "Age : "+ l.getAge());
+			l1.log(Level.INFO,()->"GPA : "+ l.getGpa());
+			l1.info("-----------------------");
 		}
 	}
 }
