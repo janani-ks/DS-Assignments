@@ -4,7 +4,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.Iterator;
 public class Hashset {
-	public static void main(String args[]){  
+	public static void main(String[] args){  
 		    HashSet<String> set=new HashSet();  
 		    Logger l1 = Logger.getLogger("com.api.jar");
 		           set.add("One");    
