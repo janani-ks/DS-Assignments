@@ -6,7 +6,7 @@ import java.util.HashMap;
 
 public class Hashmap {
 	 static PrintStream display=new PrintStream((new FileOutputStream(FileDescriptor.out)));
-	 public static void main(String args[]){  
+	 public static void main(String[] args){  
 		   HashMap<Integer,String> map=new HashMap<Integer,String>(); 
 		   map.put(3,"Janani");  
 		   map.put(1,"Nivedha");    
