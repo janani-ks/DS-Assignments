@@ -3,12 +3,10 @@ import java.io.FileDescriptor;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
 import java.util.HashSet;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import java.util.Iterator;
 public class Hashset {
 	static PrintStream display=new PrintStream((new FileOutputStream(FileDescriptor.out)));
-	public static void main(String args[]){  
+	public static void main(String[] args){  
 		    HashSet<String> set=new HashSet<String>();  
 		           set.add("One");    
 		           set.add("Two");    
