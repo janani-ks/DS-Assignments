@@ -12,7 +12,7 @@ public class Hashmap {
 		   map.put(1,"Nivedha");    
 		   map.put(2,"Jaggu");   
 		   map.put(4,"Shubha"); 
-		   map.put(2,null);
+		   map.put(5,null);
 		   display.println("Keys : " + map.keySet());
 		   display.println("Values : " + map.values());
 		   display.println( "Key/Value mappings: " + map.entrySet());
